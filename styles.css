@@ -464,6 +464,29 @@ p {
     font-size: 1.05rem;
 }
 
+.card-content h3 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.price-tag {
+    display: inline-block;
+    background: rgba(242, 101, 34, 0.15);
+    color: var(--primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(242, 101, 34, 0.3);
+}
+
+.card-content p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
 .features i {
     color: var(--primary);
     font-size: 0.9rem;
