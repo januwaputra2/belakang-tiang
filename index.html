@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belakang Tiang - Sate Taichan & Mie Ayam</title>
+    <meta name="description" content="Sate Taichan dan Mie Ayam Belakang Tiang. Porsi mantap, harga bersahabat! Cari yang enak? Ya di sini!">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Belakang Tiang</div>
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#menu">Menu Kami</a>
+            <a href="#order" class="btn-primary">Pesan Sekarang</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <span class="badge">Sensasi Rasa Terbaik</span>
+                <h1>Sate Taichan &<br><span class="highlight">Mie Ayam</span></h1>
+                <p class="subtitle">Belakang Tiang - Cari yang enak? Ya di sini!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary">Lihat Menu</a>
+                    <a href="https://gofood.link/a/TBJmeSL" target="_blank" class="btn-secondary">Pesan Online <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Animated Visuals on the Right -->
+            <div class="hero-visual fade-in" style="transition-delay: 0.3s;">
+                <div class="parallax-wrap">
+                    <div class="floating-img main-img floating-anim">
+                        <img src="images/sate_taichan.png" alt="Sate Taichan">
+                    </div>
+                    <div class="floating-img sub-img floating-anim-alt">
+                        <img src="images/mie_ayam.png" alt="Mie Ayam">
+                    </div>
+                    <div class="floating-badge floating-anim-fast">
+                        <i class="fas fa-star"></i>
+                        <span>Porsi Mantap!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="section-header fade-in">
+            <h2>Menu Kami</h2>
+            <p>Porsi mantap, harga bersahabat. Dibuat dengan bahan segar dan bumbu rahasia.</p>
+        </div>
+
+        <!-- Kategori Sate Taichan -->
+        <div class="menu-category-label fade-in">🔥 Sate Taichan</div>
+        <div class="menu-container menu-single fade-in">
+            <div class="menu-card">
+                <div class="card-img" style="background-image: url('images/sate_taichan.png');"></div>
+                <div class="card-content">
+                    <h3>Sate Taichan</h3>
+                    <p>Sate ayam dada tanpa lemak yang dibakar sempurna, disajikan dengan sambal pedas nampol dan perasan jeruk nipis segar.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 100% Dada Ayam</li>
+                        <li><i class="fas fa-check"></i> Sambal Bawang Segar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori Mie -->
+        <div class="menu-category-label fade-in" style="transition-delay: 0.1s;">🍜 Pilihan Mie</div>
+        <div class="menu-container fade-in" style="transition-delay: 0.2s;">
+            <!-- Mie Ayam -->
+            <div class="menu-card">
+                <div class="card-img" style="background-image: url('images/mie_ayam.png');"></div>
+                <div class="card-content">
+                    <h3>Mie Ayam</h3>
+                    <p>Mie kenyal dengan topping ayam kecap manis gurih, sayur segar, dan kuah kaldu istimewa yang bikin ketagihan.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Resep Autentik</li>
+                        <li><i class="fas fa-check"></i> Kuah Kaldu Gurih</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bihun Ayam -->
+            <div class="menu-card">
+                <div class="card-img" style="background-image: url('images/bihun_ayam.png');"></div>
+                <div class="card-content">
+                    <h3>Bihun Ayam</h3>
+                    <p>Bihun lembut dengan topping ayam gurih dan kuah kaldu yang hangat dan menyegarkan di setiap suapan.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Tekstur Lembut</li>
+                        <li><i class="fas fa-check"></i> Cocok Segala Usia</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Kwetiaw Ayam -->
+            <div class="menu-card">
+                <div class="card-img" style="background-image: url('images/kwetiaw_ayam.png');"></div>
+                <div class="card-content">
+                    <h3>Kwetiaw Ayam</h3>
+                    <p>Kwetiaw flat noodle kenyal dengan potongan ayam dan bumbu khas yang kaya rasa, dijamin bikin nagih.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Noodle Kenyal</li>
+                        <li><i class="fas fa-check"></i> Bumbu Khas Istimewa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order / Delivery Section -->
+    <section id="order" class="order-section">
+        <div class="order-content fade-in">
+            <h2>Pesan Sekarang!</h2>
+            <p>Nikmati hidangan kami langsung di tempat atau pesan melalui aplikasi favorit Anda.</p>
+            
+            <div class="platform-links">
+                <a href="https://gofood.link/a/TBJmeSL" target="_blank" class="platform-btn gofood">
+                    <i class="fas fa-motorcycle" style="font-size: 24px;"></i>
+                    <span>Pesan di GoFood</span>
+                </a>
+                <a href="https://wa.me/6285714194958" target="_blank" class="platform-btn whatsapp">
+                    <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
+                    <span>Hubungi via WhatsApp</span>
+                </a>
+                <a href="https://maps.app.goo.gl/xD5xeivtCh4t5def7" target="_blank" class="platform-btn maps">
+                    <i class="fas fa-map-marker-alt" style="font-size: 24px;"></i>
+                    <span>Lihat di Google Maps</span>
+                </a>
+            </div>
+
+            <div class="social-links">
+                <p>Ikuti kami di Instagram</p>
+                <a href="https://www.instagram.com/taichanbelakangtiang?igsh=dXNoM2VmcW44a3ph" target="_blank" class="instagram-link">
+                    <i class="fab fa-instagram"></i> @taichanbelakangtiang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Belakang Tiang</h3>
+            <p>Sate Taichan & Mie Ayam</p>
+            <p class="copyright">&copy; 2026 Belakang Tiang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
