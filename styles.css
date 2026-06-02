@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -303,6 +304,7 @@ p {
     padding: 8rem 5%;
     position: relative;
     background: linear-gradient(180deg, var(--bg-color) 0%, #151518 100%);
+    overflow: hidden;
 }
 
 .section-header {
