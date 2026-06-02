@@ -2,10 +2,20 @@
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
+    // Navbar background
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
+    }
+    
+    // Scroll progress bar
+    const scrollProgress = document.getElementById('scroll-progress');
+    if (scrollProgress) {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        scrollProgress.style.width = scrolled + "%";
     }
 });
 
