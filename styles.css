@@ -340,7 +340,24 @@ p {
     border-radius: 24px;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    position: relative; /* For absolute badge */
+}
+
+.best-seller-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #111;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    transform: rotate(5deg);
+    letter-spacing: 0.5px;
 }
 
 .menu-card:hover {
@@ -397,6 +414,32 @@ p {
 .features i {
     color: var(--primary);
     font-size: 0.9rem;
+}
+
+/* Background Glowing Orbs */
+.bg-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.glow-1 {
+    top: 5%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: rgba(242, 101, 34, 0.25);
+}
+
+.glow-2 {
+    bottom: -10%;
+    right: -10%;
+    width: 700px;
+    height: 700px;
+    background: rgba(200, 30, 30, 0.2);
 }
 
 /* Order Section */

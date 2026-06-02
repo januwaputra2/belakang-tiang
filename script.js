@@ -76,3 +76,36 @@ document.addEventListener('mousemove', (e) => {
         badge.style.transform = `translate(${x * 2}px, ${y * 2}px)`;
     }
 });
+
+// 3D Tilt Effect for Menu Cards
+const tiltCards = document.querySelectorAll('.tilt-card');
+
+tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        // Only apply on desktop
+        if(window.innerWidth > 992) {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            // Limit rotation to 10 degrees max
+            const rotateX = ((y - centerY) / centerY) * -10; 
+            const rotateY = ((x - centerX) / centerX) * 10;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            card.style.boxShadow = `0 30px 60px rgba(0,0,0,0.6), 0 0 40px rgba(242, 101, 34, 0.15)`;
+            card.style.borderColor = `rgba(242, 101, 34, 0.4)`;
+            card.style.zIndex = `10`;
+        }
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = ``;
+        card.style.boxShadow = ``;
+        card.style.borderColor = ``;
+        card.style.zIndex = ``;
+    });
+});
