@@ -119,3 +119,17 @@ tiltCards.forEach(card => {
         card.style.zIndex = ``;
     });
 });
+
+// Floating Embers Effect
+const embersContainer = document.querySelector('.embers-container');
+if (embersContainer) {
+    for (let i = 0; i < 35; i++) {
+        const ember = document.createElement('div');
+        ember.classList.add('ember');
+        ember.style.left = Math.random() * 100 + 'vw';
+        ember.style.animationDuration = (Math.random() * 4 + 3) + 's';
+        ember.style.animationDelay = Math.random() * 5 + 's';
+        ember.style.opacity = Math.random() * 0.8 + 0.2;
+        embersContainer.appendChild(ember);
+    }
+}
