@@ -133,3 +133,35 @@ if (embersContainer) {
         embersContainer.appendChild(ember);
     }
 }
+
+// Auto-scrolling Reviews Carousel (with manual scroll support)
+const reviewsCarousel = document.querySelector('.reviews-carousel');
+if (reviewsCarousel) {
+    let scrollInterval;
+    let isHoveredOrTouched = false;
+
+    const startAutoScroll = () => {
+        // Clear any existing interval to prevent speeding up
+        clearInterval(scrollInterval);
+        scrollInterval = setInterval(() => {
+            if (!isHoveredOrTouched) {
+                reviewsCarousel.scrollLeft += 1; // Adjust speed (higher = faster)
+                
+                // If we've scrolled past half the track (the duplicated part), reset to 0 for infinite loop
+                if (reviewsCarousel.scrollLeft >= reviewsCarousel.scrollWidth / 2) {
+                    reviewsCarousel.scrollLeft = 0;
+                }
+            }
+        }, 30); // 30ms interval = smooth slow scroll
+    };
+
+    startAutoScroll();
+
+    // Pause on hover or touch so user can read/scroll manually
+    reviewsCarousel.addEventListener('mouseenter', () => isHoveredOrTouched = true);
+    reviewsCarousel.addEventListener('mouseleave', () => isHoveredOrTouched = false);
+    reviewsCarousel.addEventListener('touchstart', () => isHoveredOrTouched = true, {passive: true});
+    reviewsCarousel.addEventListener('touchend', () => {
+        setTimeout(() => isHoveredOrTouched = false, 1500); // Resume 1.5s after touch ends
+    });
+}
