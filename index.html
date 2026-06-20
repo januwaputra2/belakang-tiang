@@ -3,198 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belakang Tiang - Sate Taichan & Mie Ayam</title>
-    <meta name="description" content="Sate Taichan dan Mie Ayam Belakang Tiang. Porsi mantap, harga bersahabat! Cari yang enak? Ya di sini!">
+    <title>Belakang Tiang - Sate Taichan & Mie Ayam Premium</title>
+    <meta name="description" content="Sate Taichan dan Mie Ayam Belakang Tiang. Porsi mantap, rasa juara, harga bersahabat! Nikmati sensasi pedas nampol halal 100%.">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-glow"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-brand">
+                <span class="brand-text">Belakang</span>
+                <span class="brand-subtext">Tiang</span>
+            </div>
+            <div class="preloader-spinner-wrapper">
+                <div class="preloader-spinner"></div>
+            </div>
+            <p class="preloader-quote">Membakar Selera, Menyajikan Kebahagiaan...</p>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="scroll-progress" id="scroll-progress"></div>
-        <div class="logo">Belakang Tiang</div>
-        <div class="nav-links">
-            <a href="#home">Beranda</a>
-            <a href="#menu">Menu Kami</a>
-            <a href="#reviews">Ulasan</a>
-            <a href="#order" class="btn-primary">Pesan Sekarang</a>
-        </div>
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <span>Belakang</span>
+                    <span class="logo-accent">Tiang</span>
+                </a>
+                <div class="halal-badge">
+                    <img src="images/halal.png" alt="Halal Indonesia" title="100% Halal">
+                    <span>Halal</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Beranda</a>
+                <a href="#menu">Menu</a>
+                <a href="#reviews">Ulasan</a>
+                <a href="#order" class="order-btn-nav">Pesan Sekarang</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header id="home" class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hero-bg-glow"></div>
         <div class="embers-container"></div>
         <div class="hero-container">
             <div class="hero-content fade-in">
-                <span class="badge">Sensasi Rasa Terbaik</span>
-                <h1>Sate Taichan &<br><span class="highlight">Mie Ayam</span></h1>
-                <p class="subtitle">Belakang Tiang - Cari yang enak? Ya di sini!</p>
+                <div class="hero-badge-row">
+                    <span class="badge">🔥 Sensasi Rasa Terbaik</span>
+                    <span class="halal-badge-inline">
+                        <img src="images/halal.png" alt="Halal">
+                        <span>100% Halal</span>
+                    </span>
+                </div>
+                <h1>Sate Taichan <br><span class="highlight">&amp; Mie Ayam</span></h1>
+                <p class="subtitle">Porsi mantap, harga bersahabat, rasa nikmat tiada duanya. Cari yang enak dan bikin nagih? Ya di Belakang Tiang!</p>
                 <div class="hero-buttons">
-                    <a href="#menu" class="btn-primary">Lihat Menu</a>
-                    <a href="https://gofood.link/a/TBJmeSL" target="_blank" class="btn-secondary">Pesan Online <i class="fas fa-arrow-right"></i></a>
+                    <a href="#menu" class="btn-primary">Lihat Menu Kami <i class="fas fa-utensils"></i></a>
+                    <a href="https://gofood.link/a/TBJmeSL" target="_blank" class="btn-secondary">Order Online <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
             <!-- Animated Visuals on the Right -->
-            <div class="hero-visual fade-in" style="transition-delay: 0.3s;">
+            <div class="hero-visual fade-in">
                 <div class="parallax-wrap">
+                    <div class="glow-orb"></div>
                     <div class="floating-img main-img floating-anim">
-                        <img src="images/sate_taichan.png" alt="Sate Taichan">
+                        <img src="images/sate_taichan.png" alt="Sate Taichan Belakang Tiang">
+                        <div class="img-label">Sate Taichan</div>
                     </div>
                     <div class="floating-img sub-img floating-anim-alt">
-                        <img src="images/mie_ayam.png" alt="Mie Ayam">
+                        <img src="images/mie_ayam.png" alt="Mie Ayam Belakang Tiang">
+                        <div class="img-label">Mie Ayam</div>
                     </div>
                     <div class="floating-badge floating-anim-fast">
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-fire"></i>
                         <span>Porsi Mantap!</span>
                     </div>
+                    <!-- Rotating Stamp Badge -->
+                    <div class="stamp-badge">
+                        <svg viewBox="0 0 100 100" width="100" height="100">
+                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                            <text><textPath href="#circlePath">• RASA AUTHENTIK • BELAKANG TIANG </textPath></text>
+                        </svg>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Kebawah</span>
+            <div class="mouse-icon">
+                <div class="wheel"></div>
             </div>
         </div>
     </header>
 
     <!-- Menu Section -->
     <section id="menu" class="menu-section">
-        <!-- Glowing Orbs -->
         <div class="bg-glow glow-1"></div>
         <div class="bg-glow glow-2"></div>
         
         <div class="section-header fade-in">
-            <h2>Menu Kami</h2>
-            <p>Porsi mantap, harga bersahabat. Dibuat dengan bahan segar dan bumbu rahasia.</p>
+            <span class="section-tag">Daftar Menu</span>
+            <h2>Hidangan Terpopuler Kami</h2>
+            <p>Dibuat dengan bahan-bahan premium pilihan, bumbu rahasia warisan, serta sambal segar yang dijamin menggoyang lidah Anda.</p>
         </div>
 
-        <!-- Kategori Sate Taichan -->
-        <div class="menu-category-label fade-in">🔥 Sate Taichan</div>
-        <div class="menu-container menu-single fade-in">
-            <div class="menu-card tilt-card">
-                <div class="best-seller-badge">🏆 Best Seller</div>
-                <div class="card-img" style="background-image: url('images/sate_taichan.png');"></div>
-                <div class="card-content">
-                    <h3>Sate Taichan</h3>
-                    <div class="price-tag">Mulai Rp 25.000</div>
-                    <p>Sate ayam dada tanpa lemak yang dibakar sempurna, disajikan dengan sambal segar pedas nampol dan perasan jeruk nipis.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> 100% Dada Ayam Segar</li>
-                        <li><i class="fas fa-check"></i> Sambal Segar Pedas Nampol</li>
-                    </ul>
-                </div>
+        <!-- Search & Filter Options -->
+        <div class="menu-filters-wrapper fade-in">
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="menu-search" placeholder="Cari makanan favoritmu...">
+                <button class="clear-search-btn" id="clear-search"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Semua Menu</button>
+                <button class="filter-tab" data-filter="taichan">🔥 Sate Taichan</button>
+                <button class="filter-tab" data-filter="mie">🍜 Pilihan Mie &amp; Bihun</button>
             </div>
         </div>
 
-        <!-- Kategori Mie -->
-        <div class="menu-category-label fade-in" style="transition-delay: 0.1s;">🍜 Pilihan Mie</div>
-        <div class="menu-container fade-in" style="transition-delay: 0.2s;">
-            <!-- Mie Ayam -->
-            <div class="menu-card tilt-card">
-                <div class="best-seller-badge">🏆 Best Seller</div>
-                <div class="card-img" style="background-image: url('images/mie_ayam.png');"></div>
-                <div class="card-content">
-                    <h3>Mie Ayam</h3>
-                    <div class="price-tag">Mulai Rp 15.000</div>
-                    <p>Mie kenyal dengan topping ayam kecap manis gurih, sayur segar, dan kuah kaldu istimewa yang bikin ketagihan.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> Resep Autentik</li>
-                        <li><i class="fas fa-check"></i> Kuah Kaldu Gurih</li>
-                    </ul>
+        <div class="menu-grid" id="menu-grid">
+            <!-- Sate Taichan Card -->
+            <div class="menu-card-item fade-in" data-category="taichan" data-name="Sate Taichan">
+                <div class="menu-card tilt-card">
+                    <div class="best-seller-badge">🏆 Best Seller</div>
+                    <div class="card-img-wrapper">
+                        <div class="card-img" style="background-image: url('images/sate_taichan.png');"></div>
+                        <div class="card-price">Mulai Rp 25.000</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sate Taichan</h3>
+                        <p class="card-description">Sate dada ayam segar rendah lemak yang dibakar empuk, disajikan dengan sambal segar pedas nampol, garam gurih, dan perasan jeruk nipis segar.</p>
+                        
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> 100% Dada Ayam Segar</li>
+                            <li><i class="fas fa-check-circle"></i> Sambal Pedas Segar</li>
+                            <li><i class="fas fa-check-circle"></i> Porsi Biasa (10 Tusuk)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- Bihun Ayam -->
-            <div class="menu-card tilt-card">
-                <div class="card-img" style="background-image: url('images/bihun_ayam.png');"></div>
-                <div class="card-content">
-                    <h3>Bihun Ayam</h3>
-                    <div class="price-tag">Mulai Rp 15.000</div>
-                    <p>Bihun lembut dengan topping ayam gurih dan kuah kaldu yang hangat dan menyegarkan di setiap suapan.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> Tekstur Lembut</li>
-                        <li><i class="fas fa-check"></i> Cocok Segala Usia</li>
-                    </ul>
+            
+            <!-- Taichan Oseng Card -->
+            <div class="menu-card-item fade-in" data-category="taichan" data-name="Taichan Oseng">
+                <div class="menu-card tilt-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-img" style="background-image: url('images/taichan-oseng.png');"></div>
+                        <div class="card-price">Mulai Rp 20.000</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Taichan Oseng</h3>
+                        <p class="card-description">Sate dada ayam fillet gurih yang dioseng pedas bersama rempah-rempah pilihan dengan sensasi tumisan bumbu pedas nampol.</p>
+                        
+                        <!-- Spicy Level description -->
+                        <div class="menu-options-group">
+                            <span class="option-label">Pilihan Pedas:</span>
+                            <div class="spicy-text-list">
+                                <span class="spicy-text-item level-0">Tidak Pedas</span>
+                                <span class="spicy-text-divider">•</span>
+                                <span class="spicy-text-item level-1">Pedes Tenang</span>
+                                <span class="spicy-text-divider">•</span>
+                                <span class="spicy-text-item level-2">Pedes Galak</span>
+                                <span class="spicy-text-divider">•</span>
+                                <span class="spicy-text-item level-3">Pedes Breakdance</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Bumbu Rempah Meresap</li>
+                            <li><i class="fas fa-check-circle"></i> Tumisan Gurih &amp; Nikmat</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- Kwetiaw Ayam -->
-            <div class="menu-card tilt-card">
-                <div class="card-img" style="background-image: url('images/kwetiaw_ayam.png');"></div>
-                <div class="card-content">
-                    <h3>Kwetiaw Ayam</h3>
-                    <div class="price-tag">Mulai Rp 15.000</div>
-                    <p>Kwetiaw flat noodle kenyal dengan potongan ayam dan bumbu khas yang kaya rasa, dijamin bikin nagih.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> Noodle Kenyal</li>
-                        <li><i class="fas fa-check"></i> Bumbu Khas Istimewa</li>
-                    </ul>
+
+            <!-- Mie Ayam Card -->
+            <div class="menu-card-item fade-in" data-category="mie" data-name="Mie Ayam">
+                <div class="menu-card tilt-card">
+                    <div class="best-seller-badge">🏆 Best Seller</div>
+                    <div class="card-img-wrapper">
+                        <div class="card-img" style="background-image: url('images/mie_ayam.png');"></div>
+                        <div class="card-price">Mulai Rp 15.000</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mie Ayam</h3>
+                        <p class="card-description">Mie kenyal buatan sendiri disiram topping daging ayam cincang bumbu kecap manis gurih, sayuran hijau segar, disajikan dengan kuah kaldu hangat yang sedap.</p>
+                        
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Mie Kenyal Home-made</li>
+                            <li><i class="fas fa-check-circle"></i> Kuah Kaldu Asli</li>
+                            <li><i class="fas fa-check-circle"></i> Tanpa Bahan Pengawet</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+            <!-- Bihun Ayam Card -->
+            <div class="menu-card-item fade-in" data-category="mie" data-name="Bihun Ayam">
+                <div class="menu-card tilt-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-img" style="background-image: url('images/bihun_ayam.png');"></div>
+                        <div class="card-price">Mulai Rp 15.000</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bihun Ayam</h3>
+                        <p class="card-description">Bihun beras lembut yang disiram daging ayam kecap gurih, ditaburi bawang goreng harum, sayuran segar, dan kuah kaldu bening yang segar.</p>
+                        
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Tekstur Lembut &amp; Ringan</li>
+                            <li><i class="fas fa-check-circle"></i> Kuah Hangat Menyegarkan</li>
+                            <li><i class="fas fa-check-circle"></i> 100% Bihun Beras Murni</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kwetiaw Ayam Card -->
+            <div class="menu-card-item fade-in" data-category="mie" data-name="Kwetiaw Ayam">
+                <div class="menu-card tilt-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-img" style="background-image: url('images/kwetiaw_ayam.png');"></div>
+                        <div class="card-price">Mulai Rp 15.000</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kwetiaw Ayam</h3>
+                        <p class="card-description">Kwetiaw lebar yang kenyal lembut dengan taburan daging ayam berbumbu khas, sayur sawi hijau, disajikan bersama siraman kuah kaldu segar beraroma.</p>
+                        
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Kwetiaw Super Lembut</li>
+                            <li><i class="fas fa-check-circle"></i> Taburan Bawang Putih Goreng</li>
+                            <li><i class="fas fa-check-circle"></i> Kenyal &amp; Lezat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-results" id="no-results-msg">
+            <i class="fas fa-search-minus"></i>
+            <p>Oops! Menu yang kamu cari tidak ditemukan.</p>
         </div>
     </section>
 
     <!-- Reviews Section -->
     <section id="reviews" class="reviews-section">
         <div class="section-header fade-in">
+            <span class="section-tag">Ulasan Pelanggan</span>
             <h2>Apa Kata Mereka?</h2>
-            <p>Rating 5 Bintang di Google Maps. Buktikan sendiri kelezatannya!</p>
+            <p>Kami sangat bersyukur dipercaya mendapatkan rating tinggi oleh para pelanggan. Kepuasan rasa adalah prioritas kami.</p>
+            <div class="rating-summary-badge">
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="rating-text">⭐ <strong>5.0 / 5.0</strong> di Google Maps</div>
+            </div>
         </div>
         
-        <div class="reviews-carousel fade-in" style="transition-delay: 0.2s;">
-            <div class="reviews-track">
-                <!-- SET 1 -->
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Taichannya enak banget, pedasnya pas dan mie ayamnya gurih!"</p>
-                    <div class="reviewer"><div class="reviewer-icon">J</div><h4 class="reviewer-name">Januwa Putra</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Bakmienya enak berasa gurihnya. Sate taichannya juga smokie banget. Favorit baru tempat makan deket rumah nih."</p>
-                    <div class="reviewer"><div class="reviewer-icon">F</div><h4 class="reviewer-name">Fahmi Najich</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Taichannya paling juara, kesini ga beli taichannya nyesel. Rekomendasi banget taichan & mie ayamnya."</p>
-                    <div class="reviewer"><div class="reviewer-icon">F</div><h4 class="reviewer-name">Febri Setiawan</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Taichannya berasa banget aroma bakarannya. Tempatnya juga bersih dan nyaman. Top markotop makanannya."</p>
-                    <div class="reviewer"><div class="reviewer-icon">S</div><h4 class="reviewer-name">Surya Gemilang</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Enaaaaaaaaakkk dan murmer. Porsinya banyak, harga ramah kantong, rasa juara."</p>
-                    <div class="reviewer"><div class="reviewer-icon">Y</div><h4 class="reviewer-name">Yuana Duyaba</h4></div>
-                </div>
+        <div class="reviews-carousel-container fade-in">
+            <div class="reviews-carousel">
+                <div class="reviews-track">
+                    <!-- SET 1 -->
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Taichannya enak banget, pedasnya pas dan mie ayamnya gurih!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">J</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Januwa Putra</h4>
+                                <span class="reviewer-tag">Local Guide</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Bakmienya enak berasa gurihnya. Sate taichannya juga smokie banget. Favorit baru tempat makan deket rumah nih."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">F</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Fahmi Najich</h4>
+                                <span class="reviewer-tag">Pelanggan Setia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Taichannya paling juara, kesini ga beli taichannya nyesel. Rekomendasi banget taichan &amp; mie ayamnya."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">F</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Febri Setiawan</h4>
+                                <span class="reviewer-tag">Local Guide</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Taichannya berasa banget aroma bakarannya. Tempatnya juga bersih dan nyaman. Top markotop makanannya."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">S</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Surya Gemilang</h4>
+                                <span class="reviewer-tag">Penikmat Kuliner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Enaaaaaaaaakkk dan murmer. Porsinya banyak, harga ramah kantong, rasa juara."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">Y</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Yuana Duyaba</h4>
+                                <span class="reviewer-tag">Pelanggan Tetap</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- SET 2 (Duplicate for seamless scroll) -->
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Taichannya enak banget, pedasnya pas dan mie ayamnya gurih!"</p>
-                    <div class="reviewer"><div class="reviewer-icon">J</div><h4 class="reviewer-name">Januwa Putra</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Bakmienya enak berasa gurihnya. Sate taichannya juga smokie banget. Favorit baru tempat makan deket rumah nih."</p>
-                    <div class="reviewer"><div class="reviewer-icon">F</div><h4 class="reviewer-name">Fahmi Najich</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Taichannya paling juara, kesini ga beli taichannya nyesel. Rekomendasi banget taichan & mie ayamnya."</p>
-                    <div class="reviewer"><div class="reviewer-icon">F</div><h4 class="reviewer-name">Febri Setiawan</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Taichannya berasa banget aroma bakarannya. Tempatnya juga bersih dan nyaman. Top markotop makanannya."</p>
-                    <div class="reviewer"><div class="reviewer-icon">S</div><h4 class="reviewer-name">Surya Gemilang</h4></div>
-                </div>
-                <div class="review-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Enaaaaaaaaakkk dan murmer. Porsinya banyak, harga ramah kantong, rasa juara."</p>
-                    <div class="reviewer"><div class="reviewer-icon">Y</div><h4 class="reviewer-name">Yuana Duyaba</h4></div>
+                    <!-- SET 2 (Duplicate for seamless scroll) -->
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Taichannya enak banget, pedasnya pas dan mie ayamnya gurih!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">J</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Januwa Putra</h4>
+                                <span class="reviewer-tag">Local Guide</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Bakmienya enak berasa gurihnya. Sate taichannya juga smokie banget. Favorit baru tempat makan deket rumah nih."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">F</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Fahmi Najich</h4>
+                                <span class="reviewer-tag">Pelanggan Setia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Taichannya paling juara, kesini ga beli taichannya nyesel. Rekomendasi banget taichan &amp; mie ayamnya."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">F</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Febri Setiawan</h4>
+                                <span class="reviewer-tag">Local Guide</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Taichannya berasa banget aroma bakarannya. Tempatnya juga bersih dan nyaman. Top markotop makanannya."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">S</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Surya Gemilang</h4>
+                                <span class="reviewer-tag">Penikmat Kuliner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Enaaaaaaaaakkk dan murmer. Porsinya banyak, harga ramah kantong, rasa juara."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-icon">Y</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Yuana Duyaba</h4>
+                                <span class="reviewer-tag">Pelanggan Tetap</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -202,29 +402,48 @@
 
     <!-- Order / Delivery Section -->
     <section id="order" class="order-section">
+        <div class="order-bg-glow"></div>
         <div class="order-content fade-in">
-            <h2>Pesan Sekarang!</h2>
-            <p>Nikmati hidangan kami langsung di tempat atau pesan melalui aplikasi favorit Anda.</p>
+            <span class="section-tag" style="color: var(--primary);">Delivery &amp; Dine-in</span>
+            <h2>Pesan Sekarang &amp; Nikmati Kelezatannya!</h2>
+            <p>Pilih metode pemesanan yang paling mudah bagi Anda. Kami siap melayani dengan cepat baik makan di tempat, bawa pulang, atau antar langsung ke rumah Anda.</p>
             
             <div class="platform-links">
                 <a href="https://gofood.link/a/TBJmeSL" target="_blank" class="platform-btn gofood">
-                    <i class="fas fa-motorcycle" style="font-size: 24px;"></i>
-                    <span>Pesan di GoFood</span>
+                    <div class="btn-icon-wrapper"><i class="fas fa-motorcycle"></i></div>
+                    <div class="btn-text-wrapper">
+                        <span class="btn-label">Pesan Melalui</span>
+                        <span class="btn-title">GoFood</span>
+                    </div>
+                </a>
+                <a href="https://food.grab.com/id/id/restaurant/online-delivery/6-C8AFT7WTVCAZKE?sourceID=20260613_181430_bcd6cb16cd5a481c8cb244877e32454d_MEXMPS&fbclid=PAT01DUASjTnZleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaemTQPpPFiHs5gjp_lEW65D7cdeMRA4mgtTbbWt6-w75o6zPJzp7FF3yHsTpQ_aem_9u_GqOenpVdalYQN-OIbLA" target="_blank" class="platform-btn grabfood">
+                    <div class="btn-icon-wrapper"><i class="fas fa-motorcycle"></i></div>
+                    <div class="btn-text-wrapper">
+                        <span class="btn-label">Pesan Melalui</span>
+                        <span class="btn-title">GrabFood</span>
+                    </div>
                 </a>
                 <a href="https://wa.me/6285714194958" target="_blank" class="platform-btn whatsapp">
-                    <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
-                    <span>Hubungi via WhatsApp</span>
+                    <div class="btn-icon-wrapper"><i class="fab fa-whatsapp"></i></div>
+                    <div class="btn-text-wrapper">
+                        <span class="btn-label">Pesan Langsung</span>
+                        <span class="btn-title">WhatsApp Chat</span>
+                    </div>
                 </a>
                 <a href="https://maps.app.goo.gl/xD5xeivtCh4t5def7" target="_blank" class="platform-btn maps">
-                    <i class="fas fa-map-marker-alt" style="font-size: 24px;"></i>
-                    <span>Lihat di Google Maps</span>
+                    <div class="btn-icon-wrapper"><i class="fas fa-map-location-dot"></i></div>
+                    <div class="btn-text-wrapper">
+                        <span class="btn-label">Petunjuk Lokasi</span>
+                        <span class="btn-title">Google Maps</span>
+                    </div>
                 </a>
             </div>
 
-            <div class="social-links">
-                <p>Ikuti kami di Instagram</p>
+            <div class="social-links-wrapper">
+                <p>Ikuti kisah kuliner kami dan dapatkan info promo terbaru di Instagram</p>
                 <a href="https://www.instagram.com/taichanbelakangtiang?igsh=dXNoM2VmcW44a3ph" target="_blank" class="instagram-link">
-                    <i class="fab fa-instagram"></i> @taichanbelakangtiang
+                    <i class="fab fa-instagram"></i>
+                    <span>@taichanbelakangtiang</span>
                 </a>
             </div>
         </div>
@@ -232,9 +451,30 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <h3>Belakang Tiang</h3>
-            <p>Sate Taichan & Mie Ayam</p>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Belakang <span>Tiang</span></h3>
+                <p class="footer-tagline">Sate Taichan &amp; Mie Ayam Autentik</p>
+                <div class="halal-badge inline-center">
+                    <img src="images/halal.png" alt="Halal">
+                    <span>100% Halal Indonesia</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <a href="#home">Beranda</a>
+                <a href="#menu">Menu</a>
+                <a href="#reviews">Ulasan</a>
+                <a href="#order">Kontak</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p><i class="fab fa-whatsapp text-primary"></i> +62 857-1419-4958</p>
+                <p><i class="fas fa-location-dot text-primary"></i> Belakang Tiang, Jakarta, Indonesia</p>
+                <p class="footer-hours"><i class="far fa-clock text-primary"></i> Buka Setiap Hari: 10.00 - 23.00 WIB</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <p class="copyright">&copy; 2026 Belakang Tiang. All rights reserved.</p>
         </div>
     </footer>
