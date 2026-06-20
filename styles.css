@@ -394,7 +394,7 @@ p {
     height: 3px;
     background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
     width: 0%;
-    z-index: 1001;
+    z-index: 998;
     box-shadow: 0 0 12px rgba(255, 77, 29, 0.5);
     transition: width 0.1s ease-out;
 }
@@ -511,6 +511,9 @@ p {
     flex-direction: column;
     gap: 6px;
     width: 30px;
+    cursor: pointer;
+    z-index: 1005;
+    position: relative;
 }
 
 .menu-toggle .bar {
